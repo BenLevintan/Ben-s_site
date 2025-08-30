@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mask Picker</title>
+    <link rel="icon" type="image/png" href="pictures/logo.png">
+</head>
+<body>
+
+    <h2>
+        Matrix Mask Picker
+    </h2>
+
+    <hr>
+
+    <p>Matrix Mask Picker is a Python application designed to toggle matrix masks on and off.<br>
+       It provides a graphical user interface (GUI) built using PyQt5, allowing users to open JSON and CSV files, load data into tables, visualize and manipulate matrices, and save modified data back to CSV files.
+    </p>
+
+    <img src="images/github logo.png"
+        alt="image of the concept designe for the software"
+        title="concept of the program"
+        height="20">
+    <a href="https://github.com/BenLevintan/matrix_mask_picker-public-/tree/main/matrix_mask_picker">Link to GitHub page of this project</a>
+
+    <br>
+    <hr>
+    <br>
+
+    <img src="images/Screenshot 2025-08-29 155451.png"
+        alt="image of the concept designe for the software"
+        title="concept of the program"
+        height="400">
+    <h1>Program Description</h1>
+    <hr>
+
+    <p>
+        This program is designed to help you load, view, and edit data stored in <b>JSON</b> and <b>CSV</b> files.
+        The interface is built around a large matrix display where each cell represents a binary value (0 or 1).
+    </p>
+
+    <h2>How It Works</h2>
+    <ul>
+        <li>First, you load a <b>JSON file</b> containing the data.</li>
+        <li>You then choose one of two specified vectors that hold the data.</li>
+        <li>The data is converted in the background into a <b>CSV matrix</b> and displayed on screen.</li>
+    </ul>
+
+    <h2>Matrix Display</h2>
+    <ul>
+        <li>Cells with <b>1</b> are displayed in <span style="color:green;">green</span>.</li>
+        <li>Cells with <b>0</b> are displayed in <span style="color:blue;">blue</span>.</li>
+        <li>Clicking on a cell toggles its value:
+            <ul>
+                <li>0 → 1</li>
+                <li>1 → 0</li>
+            </ul>
+        </li>
+        <li>If a cell was changed, its color becomes more <b>saturated</b> to highlight the modification.</li>
+    </ul>
+
+    <h2>Working with Two Matrices</h2>
+    <p>
+        You can also open a second CSV file. This will appear alongside the first matrix.
+        The left matrix is the <b>master</b>, and the right one is the <b>slave</b>.
+    </p>
+
+    <h2>Control Buttons</h2>
+    <p>Between the two matrices, there are 4 control buttons:</p>
+    <ol>
+        <li><b>Sync</b> – makes the right (slave) matrix identical to the left (master).</li>
+        <li><b>All Off</b> – sets all cells to 0.</li>
+        <li><b>All On</b> – sets all cells to 1.</li>
+        <li><b>Save</b> – saves the modified data back to a file.</li>
+    </ol>
+
+    <h2>Summary</h2>
+    <p>
+        In short, this program lets you load binary data, visualize it as a matrix, make edits directly by clicking on cells,
+        and synchronize or save changes across multiple files with ease.
+    </p>
+        <br>
+    <a href="index.html">Back to homepage</a>
+
+</body>
+</html>
